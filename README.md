@@ -51,7 +51,10 @@ In my analysis of the design system, it was clear that the font of the header wa
 -------------------------------
 
 Code Defense:
-CSS variables make sure that the design values are consistent and the themes are easy to manage. Semantic HTML elements arrange the layout of the page, whereas reusable component classes are used to style buttons, cards, notices, and other controls. The alternative theme is applied to certain color tokens rather than duplicating the whole component stylesheet.
+I chose to use a selective reset instead of resetting everything to make it possible for me to control layout options like box sizing and body margin in a more convenient way.
+My tokens in CSS depend on the purpose, so there are colors, spacing, typography, border radius, and shadows. The usage of variables like --color-bg and --space-large helps to be consistent and apply style updates without touching individual components.
+The class .day-theme helps to override default tokens in order to create another theme, Tropical Daylight. That way, it is possible to alter the color palette of the page while using existing components and layout.
+In the process of the review, I realized that the initial heading fonts were too thick and hard to read. That is why I changed the typography.
 
 -------------------------------
 
