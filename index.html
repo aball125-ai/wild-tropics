@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Tropics Design System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <p class="small-text">WILD TROPICS / DESIGN SYSTEM</p>
+            <h1>Wild Tropics</h1>
+            <p>Explore the colors, creatures, and hidden wonders of the tropical rainforest.</p>
+        </header>
+
+        <section>
+            <h2>01. Foundation and Reset</h2>
+
+            <p>
+                A solid framework ensures that Wild Tropics maintains consistency across different devices. In the reset process, border-box sizing is employed such that the padding and borders are considered in determining the total width of an element, browser default body margin is removed, images are constrained to the container, and font of form controls is the same as that of the document.
+            </p>
+        </section>
+
+        <section>
+            <h2>02. Design Token Inventory</h2>
+
+            <p>
+                In Wild Tropics, the principles of reusable design allow for the same look to be created in all the different articles about wildlife and animals. The colors, spacing, typography, and other tokens help organize the design.
+            </p>
+
+            <h3>Color Tokens</h3>
+
+            <div class="color-list">
+                <div>
+                    <div class="color-box jungle-green"></div>
+                    <p>Background: --color-bg: #062F26</p>
+                </div>
+
+                <div>
+                    <div class="color-box teal"></div>
+                    <p>Surface: --color-surface: #084B4A</p>
+                </div>
+
+                <div>
+                    <div class="color-box emerald"></div>
+                    <p>Primary: --color-primary: #159447</p>
+                </div>
+
+                <div>
+                    <div class="color-box orange"></div>
+                    <p>Accent: --color-accent: #F47732</p>
+                </div>
+
+                <div>
+                    <div class="color-box yellow"></div>
+                   <p>Highlight: --color-highlight: #F4C542</p>
+                </div>
+            </div>
+
+            <h3>Spacing Tokens</h3>
+
+            <p>Small: 4px | Medium: 12px | Large: 24px | Extra-large: 32px</p>
+
+            <h3>Sizing Tokens</h3>
+
+            <p>Content width: 1120px | Reading width: 65ch | Control height: 44px</p>
+
+            <h3>Corner and Elevation Tokens</h3>
+
+            <p>Small radius: 6px | Medium radius: 12px | Large radius: 20px</p>
+
+            <p>Card shadow: soft shadow around content cards.</p>
+
+            <h3>Typography Tokens</h3>
+
+            <p>Heading font: Arial, Helvetica, sans-serif</p>
+
+            <p>Body font: Arial, Helvetica, sans-serif</p>
+
+            <p>Small text: 14px | Body text: 16px | Heading text: 32px</p>
+
+            <p>
+                Arial and Helvetica are system fonts, so no external font download
+                or font license is required. A sans-serif fallback is provided.
+            </p>
+        </section>
+
+        <section id="typography">
+            <h2>03. Typography</h2>
+
+            <h3>Life in the Rainforest</h3>
+
+            <p>
+                There is no animal in the rainforests whose story is not worth learning about, from brightly colored macaws flying above to the secretive jaguar prowling the ground level. Headings, paragraphs, and proper text styles are all part of that journey.
+            </p>
+
+            <h3>Rainforest Animals</h3>
+
+            <ul>
+                <li>Macaws</li>
+                <li>Jaguars</li>
+                <li>Tree frogs</li>
+            </ul>
+
+            <p class="small-text">SMALL TEXT / IMAGE CAPTIONS / LABELS</p>
+
+            <p>
+                <strong>Did you know?</strong> Macaws use their strong beaks to crack open tough nuts and seeds.
+            </p>
+
+            <p>
+                <a href="#actions">This is an example text link.</a>
+            </p>
+        </section>
+
+        <section id="actions">
+            <h2>04. Actions and States</h2>
+
+            <p>
+                Explore wildlife profiles, explore rainforest habitats, and discover ways of conserving the natural homes of animals.
+            </p>
+
+            <p>
+                <a href="#typography">Example text link</a>
+            </p>
+
+            <p>
+                The primary background uses
+                <code>--color-bg</code>.
+            </p>
+
+            <button class="primary-button" type="button">
+                Primary Action
+            </button>
+
+            <button class="secondary-button" type="button">
+                Secondary Action
+            </button>
+
+            <button class="primary-button" type="button" disabled>
+                Disabled Action
+            </button>
+
+            <div class="notice">
+                <strong>Button states:</strong>
+                Hover over the buttons, click them, or use the Tab key
+                to see their interactive states. The disabled button
+                cannot be activated.
+            </div>
+        </section>
+
+        <section>
+            <h2>05. Surfaces and Content Patterns</h2>
+
+            <div class="card">
+                <h3>Tropical Rainforest</h3>
+
+                <p>
+                    Rainforests support a wide variety of wildlife,
+                    including colorful birds, reptiles, and mammals.
+                </p>
+
+                <p class="small-text">STANDARD CONTENT CARD</p>
+            </div>
+
+            <div class="card featured-card">
+                <h3>Wildlife Spotlight</h3>
+
+                <p>
+                    Macaws are known for their bright feathers and
+                    their ability to move through the rainforest canopy.
+                </p>
+
+                <p class="small-text">FEATURED CONTENT CARD</p>
+            </div>
+
+            <div class="notice">
+                <strong>Wildlife reminder:</strong>
+                Observe animals respectfully and avoid disturbing
+                their natural habitats.
+            </div>
+
+            <div class="image-placeholder" role="img"
+                 aria-label="Placeholder for a tropical wildlife photograph">
+                <p>Wildlife Image Placeholder</p>
+                <p class="small-text">SPACE RESERVED FOR AN IMAGE</p>
+            </div>
+
+            <h3>Alternate Theme: Tropical Daylight</h3>
+
+            <div class="day-theme">
+                <h3>Explore the Tropics</h3>
+
+                <p>
+                    This example uses a lighter color palette with
+                    cream backgrounds and dark green text.
+                </p>
+
+                <button class="day-button" type="button">
+                    Daylight Action
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>06. Control Foundations</h2>
+
+            <p>
+                These are examples of controls that will help you explore information about wildlife, whether by type of animal, habitat, or your reading preferences. These samples illustrate how Wild Tropics maintains consistency of form.
+            </p>
+
+            <form>
+                <label for="animal">Search for an animal</label>
+                <input
+                    type="text"
+                    id="animal"
+                    name="animal"
+                    placeholder="Enter an animal name"
+                >
+
+                <label for="habitat">Choose a habitat</label>
+                <select id="habitat" name="habitat">
+                    <option value="">Select a habitat</option>
+                    <option value="rainforest">Rainforest</option>
+                    <option value="wetlands">Wetlands</option>
+                    <option value="grassland">Grassland</option>
+                </select>
+
+                <fieldset>
+                    <legend>Wildlife interests</legend>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="birds">
+                        Birds
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="mammals">
+                        Mammals
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reading preference</legend>
+
+                    <label class="choice">
+                        <input type="radio" name="reading" value="quick">
+                        Quick facts
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="reading" value="detailed">
+                        Detailed articles
+                    </label>
+                </fieldset>
+
+                <button class="primary-button" type="button">
+                    Apply Preferences
+                </button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
